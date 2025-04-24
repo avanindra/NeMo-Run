@@ -644,7 +644,7 @@ For more information about `run.Config` and `run.Partial`, please refer to https
             return
 
         # Prepare experiment before running
-        self._prepare()
+        self._prepare( exist_ok=True)
 
         if direct:
             self.console.log(
